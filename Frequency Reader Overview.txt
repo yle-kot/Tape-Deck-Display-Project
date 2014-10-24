@@ -1,0 +1,22 @@
+micros = 1,000,000
+1Million  / 400 = 2500 // one pulse
+period of 1 second / 400 = 0.0025
+//on screen 400 hz = 240.00
+
+
+track the number of edges for a period of 500,000 microseconds and average the las
+
+PSEUDOCODE:
+ISR(){
+	current time = now()
+	array[].addValue(current time - old time)
+	
+}
+
+void main(){
+	cli() //Stop Interrupts
+	if ((millis() - last_measurement) => 500){
+	
+refresh screen every 500 ms
+400hz 
+
